@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+img {
+    background: url(./img/fundo-do-dinheiro-de-cem-dólares-5034730.webp);
+    background-repeat: no-repeat;
+    background: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vw;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #000C18;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.converter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.currency-input {
+    flex: 2;
+}
+
+.currency-select {
+    flex: 1;
+    margin-bottom: -20px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    background: #f8f9fa;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #055425;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 31, 26, 0.734);
+    transform: translateY(-2px);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000C18;
+    font-weight: 600;
+    text-align: left;
+}
+
+.pig {
+   width: 20px;
+   margin-top: 20px;
+   z-index: -1;
+}
+
+.converter-btn {
+    background: #046e1b;
+    background: linear-gradient(45deg, rgba(4, 110, 27, 1) 0%, rgba(41, 186, 92, 1) 100%);
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 50px;
+    display: block;
+}
+
+.converter-btn:hover {
+    box-shadow: 0 5px 15px rgba(0, 31, 26, 0.734);
+    transform: translateY(-2px);
+    transition: all 0.3 ease;
+}
+
+.loading {
+    margin-top: 40px;
+    display: none;
+    color: #026440;
+    font-weight: 600;
+}
+
+.error {
+    background: linear-gradient(45deg, rgb(238, 3, 3) 0%, rgb(186, 41, 41) 100%);
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.info {
+    margin-top: 30px;
+    color: #666;
+    font-size: 14px;
+}
+
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-family: poppins, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    img {
+        background-image: url('./img/fundo-do-dinheiro-de-cem-dólares-5034730.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        position: fixed;
+    }
+
+    select,
+    option {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #e0e0e0;
+        background: #f8f9fa;
+        border-radius: 12px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 8px;
+    }
+
+}
+
+@media (max-width: 480px) {
+     select,
+    option {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #e0e0e0;
+        background: #f8f9fa;
+        border-radius: 12px;
+        font-size: 13px;
+        transition: all 0.3s ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 8px;
+    }
+
+}

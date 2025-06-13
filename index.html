@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Convert Money</title>
+</head>
+
+<body>
+    <img class="img" src="./img/fundo-do-dinheiro-de-cem-dólares-5034730.webp" alt="img">
+
+    <div class="
+ container">
+        <h1>Conversor De Moedas</h1>
+        <form class="converter-form" id="converterForm">
+
+            <div class="currency-row">
+
+                <div class="currency-input">
+                    <label for="amount"></label>
+                    <input type="number" id="amount" placeholder="Digite o valor" step="0.1" min="0" required>
+                </div>
+
+                <div class="currency-select">
+                    <select id="fromCurrency" required>
+                        <option value="USD">USD - Dólar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="BRL" selected>BRL - Real Brasileiro</option>
+                        <option value="GBP">GBP - Libra</option>
+                        <option value="JPY">JPY - Iene</option>
+                        <option value="CAD">CAD - Dólar Canadense</option>
+                        <option value="AUD">AUD - Dólar Australiano</option>
+                        <option value="CHF">CHF - Franco Suíço</option>
+                        <option value="CNY">CNY - Yuan</option>
+                        <option value="ARS">ARS - Peso Argentino</option>
+                        <option value="TRY">TRY - Lira Turca</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="currency-row">
+                <div class="currency-select">
+                    <select id="toCurrency">
+                        <option value="USD">USD - Dólar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="BRL" selected>BRL - Real Brasileiro</option>
+                        <option value="GBP">GBP - Libra</option>
+                        <option value="JPY">JPY - Iene</option>
+                        <option value="CAD">CAD - Dólar Canadense</option>
+                        <option value="AUD">AUD - Dólar Australiano</option>
+                        <option value="CHF">CHF - Franco Suíço</option>
+                        <option value="CNY">CNY - Yuan</option>
+                        <option value="ARS">ARS - Peso Argentino</option>
+                        <option value="TRY">TRY - Lira Turca</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="converter-btn" id="converTerbtn">
+                💰 Converter Moeda
+            </button>
+
+        </form>
+
+        <div class="loading">Buscando Cotação...</div>
+        <div class="result"></div>
+        <div class="error">Erro ao converter. Verifique os dados e tente novamente.</div>
+
+        <div class="info">
+            <p>💡 Taxas Atualizadas em Tempo Real</p>
+        </div>
+
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
